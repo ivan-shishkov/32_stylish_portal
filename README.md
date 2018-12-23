@@ -8,8 +8,8 @@ Install [nginx](http://nginx.org):
 
 ```bash
 
-$ sudo apt-get update
-$ sudo apt-get install nginx
+# apt-get update
+# apt-get install nginx
 
 ```
 
@@ -26,7 +26,7 @@ Rename the original nginx configuration file:
 
 ```bash
 
-$ sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.backup
+# mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.backup
 
 ```
 
@@ -34,7 +34,7 @@ And create a symbolic link to the configuration file from the repository:
 
 ```bash
 
-$ sudo ln -s /absolute/path/to/32_stylish_portal/nginx.conf /etc/nginx/nginx.conf
+# ln -s /absolute/path/to/32_stylish_portal/nginx.conf /etc/nginx/nginx.conf
 
 ```
 
@@ -44,7 +44,7 @@ Reload the nginx configuration:
 
 ```bash
 
-$ sudo service nginx restart
+# service nginx restart
 
 ```
 
